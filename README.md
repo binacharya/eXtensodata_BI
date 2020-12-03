@@ -2,7 +2,7 @@
 validation of extensodata bi </br>
  <h1>Test suites</br></h1>
   <h2>1.01_login</br></h2>
-   <li><a href=" https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/01_login.robot">LOGIN PAGE</a</li></br>
+   <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/01_login.robot">LOGIN PAGE</a></li></br>
    Test case</br>
           1. Login browser should open </br>
           2. validate -- this contain the page should contain valide text  </br>
