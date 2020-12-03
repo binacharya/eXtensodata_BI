@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.8 on win32)" generated="20201126 16:23:29.064" rpa="false">
+<suite id="s1" name="01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics">
+<suite id="s1-s1" name="01 Login" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\01_login.robot">
+<test id="s1-s1-t1" name="Login browser should open">
+<kw name="open login browser" library="Loginpage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=https://10.13.189.19:8443/cas/login?service=https%3A%2F%2F10.13.189.19%3A8443%2Fbi%2Flogin%2Fcas</arg>
+<arg>browser=googlechrome</arg>
+</arguments>
+<msg timestamp="20201126 16:23:29.265" level="INFO">Opening browser 'googlechrome' to base url 'https://10.13.189.19:8443/cas/login?service=https%3A%2F%2F10.13.189.19%3A8443%2Fbi%2Flogin%2Fcas'.</msg>
+<status status="PASS" starttime="20201126 16:23:29.265" endtime="20201126 16:23:35.198"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201126 16:23:35.198" endtime="20201126 16:23:39.359"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:29.265" endtime="20201126 16:23:39.359"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:29.265" endtime="20201126 16:23:39.360" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="validate">
+<kw name="validate" library="Loginpage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:39.378" level="INFO">Current page contains text 'eXtenso Business Intelligence Solution'.</msg>
+<status status="PASS" starttime="20201126 16:23:39.362" endtime="20201126 16:23:39.378"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${queries}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:39.383" level="INFO">Current page contains text 'If you have any problem please email your issue on the following'.</msg>
+<status status="PASS" starttime="20201126 16:23:39.379" endtime="20201126 16:23:39.383"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.362" endtime="20201126 16:23:39.383"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.362" endtime="20201126 16:23:39.383" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="enter user name">
+<kw name="enter user name" library="Loginpage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=${USER_NAME_ID}</arg>
+<arg>${user_name}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:39.383" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20201126 16:23:39.383" endtime="20201126 16:23:39.463"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.383" endtime="20201126 16:23:39.463"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.383" endtime="20201126 16:23:39.463" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="invalid login">
+<kw name="invalid login" library="Loginpage">
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=${pass_word_id}</arg>
+<arg>${invalid_pass}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:39.465" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20201126 16:23:39.492" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201126 16:23:39.537" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201126 16:23:39.465" endtime="20201126 16:23:39.537"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.465" endtime="20201126 16:23:39.537"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.464" endtime="20201126 16:23:39.538" critical="yes"></status>
+</test>
+<test id="s1-s1-t5" name="enter in-correct submit">
+<kw name="enter submit" library="Loginpage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${login}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:39.540" level="INFO">Clicking element 'xpath=//*[@id="fm1"]/input[4]'.</msg>
+<status status="PASS" starttime="20201126 16:23:39.540" endtime="20201126 16:23:53.871"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.540" endtime="20201126 16:23:53.871"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:39.539" endtime="20201126 16:23:53.872" critical="yes"></status>
+</test>
+<test id="s1-s1-t6" name="message">
+<kw name="message" library="Loginpage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Authentication attempt has failed, likely due to invalid credentials. Please verify and try again.</arg>
+</arguments>
+<msg timestamp="20201126 16:23:53.890" level="INFO">Current page contains text 'Authentication attempt has failed, likely due to invalid credentials. Please verify and try again.'.</msg>
+<status status="PASS" starttime="20201126 16:23:53.875" endtime="20201126 16:23:53.891"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.875" endtime="20201126 16:23:53.891"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.874" endtime="20201126 16:23:53.891" critical="yes"></status>
+</test>
+<test id="s1-s1-t7" name="enter password">
+<kw name="enter password" library="Loginpage">
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=${pass_word_id}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:53.894" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20201126 16:23:53.913" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201126 16:23:53.959" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201126 16:23:53.893" endtime="20201126 16:23:53.959"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.893" endtime="20201126 16:23:53.959"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.893" endtime="20201126 16:23:53.959" critical="yes"></status>
+</test>
+<test id="s1-s1-t8" name="enter submit">
+<kw name="enter submit" library="Loginpage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${login}</arg>
+</arguments>
+<msg timestamp="20201126 16:23:53.962" level="INFO">Clicking element 'xpath=//*[@id="fm1"]/input[4]'.</msg>
+<status status="PASS" starttime="20201126 16:23:53.962" endtime="20201126 16:24:05.354"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.961" endtime="20201126 16:24:05.354"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:23:53.961" endtime="20201126 16:24:05.355" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:23:29.095" endtime="20201126 16:24:05.357"></status>
+</suite>
+<suite id="s1-s2" name="02 Navigation To Switch Module" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\02_navigation_to_switch_module.robot">
+<test id="s1-s2-t1" name="navigate to desired location">
+<kw name="module navigation" library="NavigationPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${navigate}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${navigate}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201126 16:24:05.756" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-856.png"&gt;&lt;img src="selenium-screenshot-856.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201126 16:24:05.380" endtime="20201126 16:24:05.756"></status>
+</kw>
+<msg timestamp="20201126 16:24:05.757" level="FAIL">Element with locator 'xpath=//app-nav-modules' not found.</msg>
+<status status="FAIL" starttime="20201126 16:24:05.370" endtime="20201126 16:24:05.757"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${navigate}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:08.490" level="INFO">Element 'xpath=//app-nav-modules' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:06.767" endtime="20201126 16:24:08.490"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:05.369" endtime="20201126 16:24:08.490"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${navigate}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:08.491" level="INFO">Clicking element 'xpath=//app-nav-modules'.</msg>
+<status status="PASS" starttime="20201126 16:24:08.490" endtime="20201126 16:24:08.644"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:13.656" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:08.645" endtime="20201126 16:24:13.656"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:05.369" endtime="20201126 16:24:13.656"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:05.368" endtime="20201126 16:24:13.656" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="navigate to switch">
+<kw name="navigate to switch" library="NavigationPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${switch}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:13.719" level="INFO">Element 'xpath=//*[@id="mat-menu-panel-1"]/div/div/div/div/a[1]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:13.656" endtime="20201126 16:24:13.719"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:13.656" endtime="20201126 16:24:13.719"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:13.719" level="INFO">Clicking element 'xpath=//*[@id="mat-menu-panel-1"]/div/div/div/div/a[1]'.</msg>
+<status status="PASS" starttime="20201126 16:24:13.719" endtime="20201126 16:24:13.795"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:13.656" endtime="20201126 16:24:13.795"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:18.802" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:13.796" endtime="20201126 16:24:18.802"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:13.656" endtime="20201126 16:24:18.802" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:24:05.360" endtime="20201126 16:24:18.802"></status>
+</suite>
+<suite id="s1-s3" name="03 Navigate To Dash Board Card Analytics" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\03_navigate_to_dash_board_card_analytics.robot">
+<test id="s1-s3-t1" name="select menu icon">
+<kw name="menu selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${menu}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:18.825" level="INFO">Element 'xpath=//span[@class='cursor-pointer mr-15 ic-menu']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:18.809" endtime="20201126 16:24:18.825"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.809" endtime="20201126 16:24:18.825"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:18.825" level="INFO">Clicking element 'xpath=//span[@class='cursor-pointer mr-15 ic-menu']'.</msg>
+<status status="PASS" starttime="20201126 16:24:18.825" endtime="20201126 16:24:18.913"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.809" endtime="20201126 16:24:18.913"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.809" endtime="20201126 16:24:18.914" critical="yes"></status>
+</test>
+<test id="s1-s3-t2" name="select switch nav bar">
+<kw name="switch selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${switch}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201126 16:24:19.341" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-857.png"&gt;&lt;img src="selenium-screenshot-857.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201126 16:24:18.938" endtime="20201126 16:24:19.341"></status>
+</kw>
+<msg timestamp="20201126 16:24:19.341" level="FAIL">The element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]' should be visible, but it is not.</msg>
+<status status="FAIL" starttime="20201126 16:24:18.917" endtime="20201126 16:24:19.341"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.378" level="INFO">Element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:20.348" endtime="20201126 16:24:20.378"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.917" endtime="20201126 16:24:20.378"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.378" level="INFO">Clicking element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:20.378" endtime="20201126 16:24:20.451"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.452" level="INFO">Clicking element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:20.451" endtime="20201126 16:24:20.509"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.916" endtime="20201126 16:24:20.509"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:18.916" endtime="20201126 16:24:20.509" critical="yes"></status>
+</test>
+<test id="s1-s3-t3" name="select dashboard nav bar">
+<kw name="dashboard selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.531" level="INFO">Element 'xpath=//mat-tree[@class='mat-tree']/mat-tree-node[3]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:20.513" endtime="20201126 16:24:20.531"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.512" endtime="20201126 16:24:20.531"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.532" level="INFO">Clicking element 'xpath=//mat-tree[@class='mat-tree']/mat-tree-node[3]'.</msg>
+<status status="PASS" starttime="20201126 16:24:20.531" endtime="20201126 16:24:20.593"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.512" endtime="20201126 16:24:20.593"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.511" endtime="20201126 16:24:20.594" critical="yes"></status>
+</test>
+<test id="s1-s3-t4" name="select terminal analytics option">
+<kw name="card analytics selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${card_analytics}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${card_analytics}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.615" level="INFO">Element 'xpath=//span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Card Analytics')]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:20.597" endtime="20201126 16:24:20.615"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.596" endtime="20201126 16:24:20.615"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${card_analytics}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:20.616" level="INFO">Clicking element 'xpath=//span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Card Analytics')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:20.615" endtime="20201126 16:24:20.702"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.596" endtime="20201126 16:24:20.702"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.595" endtime="20201126 16:24:20.703" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:24:18.802" endtime="20201126 16:24:20.705"></status>
+</suite>
+<suite id="s1-s4" name="04 Dashboard Card Analytics" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\04_dashboard_card_analytics.robot">
+<test id="s1-s4-t1" name="Select all tiles in the list">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:25.732" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:20.717" endtime="20201126 16:24:25.732"></status>
+</kw>
+<kw name="select all tilse" library="DashBoardCardAnalyticsPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>CTRL+a</arg>
+</arguments>
+<msg timestamp="20201126 16:24:25.732" level="INFO">Sending key(s) ('CTRL+a',) to page.</msg>
+<msg timestamp="20201126 16:24:25.732" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20201126 16:24:25.732" level="INFO">Sending key a</msg>
+<msg timestamp="20201126 16:24:25.732" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20201126 16:24:25.732" endtime="20201126 16:24:25.790"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:25.732" endtime="20201126 16:24:25.790"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:20.717" endtime="20201126 16:24:25.791" critical="yes"></status>
+</test>
+<test id="s1-s4-t2" name="change date level multiple tiles">
+<kw name="change date level for all tiles monthly" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:25.816" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:25.794" endtime="20201126 16:24:25.816"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:25.794" endtime="20201126 16:24:25.816"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:25.816" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:24:25.816" endtime="20201126 16:24:25.880"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:30.908" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:25.881" endtime="20201126 16:24:30.908"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:30.908" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:30.908" endtime="20201126 16:24:31.028"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:36.041" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:24:36.041" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:24:31.028" endtime="20201126 16:24:36.041"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:25.793" endtime="20201126 16:24:36.041"></status>
+</kw>
+<kw name="change date level for all tiles daily" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:36.057" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:36.041" endtime="20201126 16:24:36.057"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:36.041" endtime="20201126 16:24:36.057"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:36.057" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:24:36.057" endtime="20201126 16:24:36.102"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:41.117" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:36.102" endtime="20201126 16:24:41.117"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:41.117" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:41.117" endtime="20201126 16:24:41.190"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:46.205" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:24:46.205" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:24:41.190" endtime="20201126 16:24:46.205"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:36.041" endtime="20201126 16:24:46.205"></status>
+</kw>
+<kw name="change date level for all tiles monthly" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:46.251" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:46.205" endtime="20201126 16:24:46.251"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:46.205" endtime="20201126 16:24:46.251"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:46.267" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:24:46.251" endtime="20201126 16:24:46.393"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:51.421" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:46.393" endtime="20201126 16:24:51.421"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:51.421" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:24:51.421" endtime="20201126 16:24:51.590"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:24:56.604" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:24:56.604" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:24:51.590" endtime="20201126 16:24:56.604"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:46.205" endtime="20201126 16:24:56.604"></status>
+</kw>
+<kw name="change date level for all tiles yearly" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:56.604" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:24:56.604" endtime="20201126 16:24:56.604"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:56.604" endtime="20201126 16:24:56.604"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:24:56.604" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:24:56.604" endtime="20201126 16:24:56.669"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:01.672" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:24:56.669" endtime="20201126 16:25:01.672"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${yearly}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:01.672" level="INFO">Clicking element 'xpath=//span[contains(text(),'Yearly')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:01.672" endtime="20201126 16:25:01.805"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:06.812" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:25:06.812" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:25:01.806" endtime="20201126 16:25:06.812"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:56.604" endtime="20201126 16:25:06.812"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:24:25.793" endtime="20201126 16:25:06.812" critical="yes"></status>
+</test>
+<test id="s1-s4-t3" name="change date level single tile">
+<kw name="one tile daily" library="DashBoardCardAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${click_tile}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:06.827" level="INFO">Clicking element 'id=layout_22_197'.</msg>
+<status status="PASS" starttime="20201126 16:25:06.827" endtime="20201126 16:25:06.990"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:06.991" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:06.990" endtime="20201126 16:25:07.033"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.045" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:07.033" endtime="20201126 16:25:12.045"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.045" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.045" endtime="20201126 16:25:12.151"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:06.827" endtime="20201126 16:25:12.152"></status>
+</kw>
+<kw name="one tile monthly" library="DashBoardCardAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.153" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.153" endtime="20201126 16:25:12.209"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.210" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.210" endtime="20201126 16:25:12.343"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:12.152" endtime="20201126 16:25:12.343"></status>
+</kw>
+<kw name="one tile Yearly" library="DashBoardCardAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.345" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.345" endtime="20201126 16:25:12.429"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${yearly}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.429" level="INFO">Clicking element 'xpath=//span[contains(text(),'Yearly')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.429" endtime="20201126 16:25:12.512"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:12.344" endtime="20201126 16:25:12.512"></status>
+</kw>
+<kw name="one tile daily" library="DashBoardCardAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${click_tile}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.514" level="INFO">Clicking element 'id=layout_22_197'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.513" endtime="20201126 16:25:12.599"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:12.599" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:12.599" endtime="20201126 16:25:12.663"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:17.667" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:12.663" endtime="20201126 16:25:17.667"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:17.667" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:17.667" endtime="20201126 16:25:17.779"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:12.513" endtime="20201126 16:25:17.779"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:06.812" endtime="20201126 16:25:17.780" critical="yes"></status>
+</test>
+<test id="s1-s4-t4" name="focus tile">
+<kw name="click menu" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${menu}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:17.806" level="INFO">Element 'xpath=//div[@id='layout_22_193_content']//span[@mattooltip='Menu']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:17.783" endtime="20201126 16:25:17.806"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.783" endtime="20201126 16:25:17.806"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:17.807" level="INFO">Clicking element 'xpath=//div[@id='layout_22_193_content']//span[@mattooltip='Menu']'.</msg>
+<status status="PASS" starttime="20201126 16:25:17.806" endtime="20201126 16:25:17.930"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.783" endtime="20201126 16:25:17.930"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.782" endtime="20201126 16:25:17.931" critical="yes"></status>
+</test>
+<test id="s1-s4-t5" name="click focus">
+<kw name="click focus" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${focus}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201126 16:25:18.347" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-858.png"&gt;&lt;img src="selenium-screenshot-858.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201126 16:25:17.952" endtime="20201126 16:25:18.347"></status>
+</kw>
+<msg timestamp="20201126 16:25:18.348" level="FAIL">Element with locator 'xpath=//div[@class='mat-menu-content']/a[2]' not found.</msg>
+<status status="FAIL" starttime="20201126 16:25:17.933" endtime="20201126 16:25:18.348"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:19.418" level="INFO">Element 'xpath=//div[@class='mat-menu-content']/a[2]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:19.356" endtime="20201126 16:25:19.418"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.933" endtime="20201126 16:25:19.418"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:19.418" level="INFO">Clicking element 'xpath=//div[@class='mat-menu-content']/a[2]'.</msg>
+<status status="PASS" starttime="20201126 16:25:19.418" endtime="20201126 16:25:19.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.573" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:19.571" endtime="20201126 16:25:24.573"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.932" endtime="20201126 16:25:24.573"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:17.932" endtime="20201126 16:25:24.573" critical="yes"></status>
+</test>
+<test id="s1-s4-t6" name="cancel focus">
+<kw name="cancel focus" library="DashBoardCardAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.653" level="INFO">Element 'xpath=//span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:24.588" endtime="20201126 16:25:24.653"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.588" endtime="20201126 16:25:24.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.657" level="INFO">Clicking element 'xpath=//span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']'.</msg>
+<status status="PASS" starttime="20201126 16:25:24.653" endtime="20201126 16:25:24.732"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.588" endtime="20201126 16:25:24.732"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.573" endtime="20201126 16:25:24.733" critical="yes"></status>
+</test>
+<test id="s1-s4-t7" name="count tile">
+<kw name="count tile" library="DashBoardCardAnalyticsPage">
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='e-panel e-panel-transition']</arg>
+</arguments>
+<assign>
+<var>${Count}</var>
+</assign>
+<msg timestamp="20201126 16:25:24.749" level="INFO">${Count} = 18</msg>
+<status status="PASS" starttime="20201126 16:25:24.736" endtime="20201126 16:25:24.749"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Count}</arg>
+</arguments>
+<status status="PASS" starttime="20201126 16:25:24.749" endtime="20201126 16:25:24.749"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.736" endtime="20201126 16:25:24.750"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.735" endtime="20201126 16:25:24.750" critical="yes"></status>
+</test>
+<test id="s1-s4-t8" name="vaidate">
+<kw name="vaidate" library="DashBoardCardAnalyticsPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${conatin}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.778" level="INFO">Current page contains text 'Card Analytics'.</msg>
+<status status="PASS" starttime="20201126 16:25:24.753" endtime="20201126 16:25:24.778"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.752" endtime="20201126 16:25:24.778"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.752" endtime="20201126 16:25:24.779" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:24:20.707" endtime="20201126 16:25:24.781"></status>
+</suite>
+<suite id="s1-s5" name="05 Navigate To Terminal Analytics" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\05_navigate_to_terminal_analytics.robot">
+<test id="s1-s5-t1" name="select menu icon">
+<kw name="menu selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${menu}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.823" level="INFO">Element 'xpath=//span[@class='cursor-pointer mr-15 ic-menu']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:24.792" endtime="20201126 16:25:24.823"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.791" endtime="20201126 16:25:24.823"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:24.824" level="INFO">Clicking element 'xpath=//span[@class='cursor-pointer mr-15 ic-menu']'.</msg>
+<status status="PASS" starttime="20201126 16:25:24.824" endtime="20201126 16:25:24.912"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.791" endtime="20201126 16:25:24.913"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.791" endtime="20201126 16:25:24.913" critical="yes"></status>
+</test>
+<test id="s1-s5-t2" name="select switch nav bar">
+<kw name="switch selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${switch}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201126 16:25:25.335" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-859.png"&gt;&lt;img src="selenium-screenshot-859.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201126 16:25:24.937" endtime="20201126 16:25:25.335"></status>
+</kw>
+<msg timestamp="20201126 16:25:25.335" level="FAIL">The element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]' should be visible, but it is not.</msg>
+<status status="FAIL" starttime="20201126 16:25:24.916" endtime="20201126 16:25:25.335"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.395" level="INFO">Element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:26.343" endtime="20201126 16:25:26.395"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.916" endtime="20201126 16:25:26.395"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.395" level="INFO">Clicking element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:26.395" endtime="20201126 16:25:26.479"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${switch}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.480" level="INFO">Clicking element 'xpath=//span[@class='ng-star-inserted' and contains(text(), 'Switch')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:26.479" endtime="20201126 16:25:26.520"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.915" endtime="20201126 16:25:26.520"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:24.915" endtime="20201126 16:25:26.521" critical="yes"></status>
+</test>
+<test id="s1-s5-t3" name="select dashboard nav bar">
+<kw name="dashboard selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.543" level="INFO">Element 'xpath=//mat-tree[@class='mat-tree']/mat-tree-node[3]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:26.524" endtime="20201126 16:25:26.543"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.524" endtime="20201126 16:25:26.543"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${dashboard}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.543" level="INFO">Clicking element 'xpath=//mat-tree[@class='mat-tree']/mat-tree-node[3]'.</msg>
+<status status="PASS" starttime="20201126 16:25:26.543" endtime="20201126 16:25:26.602"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.523" endtime="20201126 16:25:26.602"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.523" endtime="20201126 16:25:26.602" critical="yes"></status>
+</test>
+<test id="s1-s5-t4" name="select terminal analytics option">
+<kw name="terminal analytics selection" library="NavigateToDashBoardCardAnalytics">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${terminal_analytics}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${terminal_analytics}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.623" level="INFO">Element 'xpath=//span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Terminal Analytics')]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:26.605" endtime="20201126 16:25:26.623"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.605" endtime="20201126 16:25:26.623"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${terminal_analytics}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:26.624" level="INFO">Clicking element 'xpath=//span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Terminal Analytics')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:26.623" endtime="20201126 16:25:26.730"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.605" endtime="20201126 16:25:26.730"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.604" endtime="20201126 16:25:26.731" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:25:24.785" endtime="20201126 16:25:26.733"></status>
+</suite>
+<suite id="s1-s6" name="06 Dashboard Terminal Analytics" source="C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\test_suites\06_dashboard_terminal_analytics.robot">
+<test id="s1-s6-t1" name="Select all tiles in the list">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:31.759" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:26.754" endtime="20201126 16:25:31.759"></status>
+</kw>
+<kw name="select all tilse" library="DashBoardTerminalAnalyticsPage">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>CTRL+a</arg>
+</arguments>
+<msg timestamp="20201126 16:25:31.759" level="INFO">Sending key(s) ('CTRL+a',) to page.</msg>
+<msg timestamp="20201126 16:25:31.759" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20201126 16:25:31.759" level="INFO">Sending key a</msg>
+<msg timestamp="20201126 16:25:31.759" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20201126 16:25:31.759" endtime="20201126 16:25:31.852"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:31.759" endtime="20201126 16:25:31.852"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:26.753" endtime="20201126 16:25:31.853" critical="yes"></status>
+</test>
+<test id="s1-s6-t2" name="change date level multiple tiles">
+<kw name="change date level for all tiles monthly" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:31.878" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:31.857" endtime="20201126 16:25:31.878"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:31.856" endtime="20201126 16:25:31.878"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:31.878" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:31.878" endtime="20201126 16:25:31.931"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:36.938" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:31.932" endtime="20201126 16:25:36.938"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:36.938" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:36.938" endtime="20201126 16:25:37.097"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:42.112" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:25:42.112" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:25:37.097" endtime="20201126 16:25:42.112"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:31.856" endtime="20201126 16:25:42.112"></status>
+</kw>
+<kw name="change date level for all tiles daily" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:42.165" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:42.112" endtime="20201126 16:25:42.165"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:42.112" endtime="20201126 16:25:42.165"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:42.165" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:42.165" endtime="20201126 16:25:42.256"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:47.265" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:42.256" endtime="20201126 16:25:47.265"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:47.265" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:47.265" endtime="20201126 16:25:47.379"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:52.383" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:25:52.383" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:25:47.379" endtime="20201126 16:25:52.383"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:42.112" endtime="20201126 16:25:52.383"></status>
+</kw>
+<kw name="change date level for all tiles monthly" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:52.418" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:25:52.383" endtime="20201126 16:25:52.418"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:52.383" endtime="20201126 16:25:52.418"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:52.418" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:25:52.418" endtime="20201126 16:25:52.500"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:25:57.514" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:25:52.500" endtime="20201126 16:25:57.514"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:25:57.514" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:25:57.514" endtime="20201126 16:25:57.627"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:02.630" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:26:02.630" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:25:57.627" endtime="20201126 16:26:02.630"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:52.383" endtime="20201126 16:26:02.630"></status>
+</kw>
+<kw name="change date level for all tiles yearly" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:02.676" level="INFO">Element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:26:02.630" endtime="20201126 16:26:02.676"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:02.630" endtime="20201126 16:26:02.676"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:02.692" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:26:02.676" endtime="20201126 16:26:02.773"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:07.781" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:26:02.774" endtime="20201126 16:26:07.781"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${yearly}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:07.781" level="INFO">Clicking element 'xpath=//span[contains(text(),'Yearly')]'.</msg>
+<status status="PASS" starttime="20201126 16:26:07.781" endtime="20201126 16:26:07.907"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+<arg>sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:12.913" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20201126 16:26:12.913" level="INFO">sec</msg>
+<status status="PASS" starttime="20201126 16:26:07.907" endtime="20201126 16:26:12.913"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:02.630" endtime="20201126 16:26:12.913"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:25:31.855" endtime="20201126 16:26:12.913" critical="yes"></status>
+</test>
+<test id="s1-s6-t3" name="change date level single tile">
+<kw name="one tile daily" library="DashBoardTerminalAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${click_tile}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:12.913" level="INFO">Clicking element 'id=layout_21_164'.</msg>
+<status status="PASS" starttime="20201126 16:26:12.913" endtime="20201126 16:26:13.044"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:13.045" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:26:13.044" endtime="20201126 16:26:13.093"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.096" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:26:13.093" endtime="20201126 16:26:18.096"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.096" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.096" endtime="20201126 16:26:18.175"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:12.913" endtime="20201126 16:26:18.175"></status>
+</kw>
+<kw name="one tile monthly" library="DashBoardTerminalAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.177" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.176" endtime="20201126 16:26:18.270"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${monthly}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.271" level="INFO">Clicking element 'xpath=//span[contains(text(),'Monthly')]'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.270" endtime="20201126 16:26:18.373"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:18.176" endtime="20201126 16:26:18.373"></status>
+</kw>
+<kw name="one tile Yearly" library="DashBoardTerminalAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.374" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.374" endtime="20201126 16:26:18.450"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${yearly}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.451" level="INFO">Clicking element 'xpath=//span[contains(text(),'Yearly')]'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.450" endtime="20201126 16:26:18.526"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:18.374" endtime="20201126 16:26:18.526"></status>
+</kw>
+<kw name="one tile daily" library="DashBoardTerminalAnalyticsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${click_tile}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.527" level="INFO">Clicking element 'id=layout_21_164'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.527" endtime="20201126 16:26:18.578"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${date_level}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:18.579" level="INFO">Clicking element 'xpath=//app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']'.</msg>
+<status status="PASS" starttime="20201126 16:26:18.579" endtime="20201126 16:26:18.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:23.667" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:26:18.652" endtime="20201126 16:26:23.667"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${daily}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:23.667" level="INFO">Clicking element 'xpath=//span[contains(text(),'Daily')]'.</msg>
+<status status="PASS" starttime="20201126 16:26:23.667" endtime="20201126 16:26:23.771"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:18.527" endtime="20201126 16:26:23.772"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:12.913" endtime="20201126 16:26:23.772" critical="yes"></status>
+</test>
+<test id="s1-s6-t4" name="focus tile">
+<kw name="click menu" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${menu}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:23.839" level="INFO">Element 'xpath=//div[@id='layout_21_164']//span[@mattooltip='Menu']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:26:23.776" endtime="20201126 16:26:23.839"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.775" endtime="20201126 16:26:23.839"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${menu}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:23.839" level="INFO">Clicking element 'xpath=//div[@id='layout_21_164']//span[@mattooltip='Menu']'.</msg>
+<status status="PASS" starttime="20201126 16:26:23.839" endtime="20201126 16:26:23.952"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.775" endtime="20201126 16:26:23.953"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.774" endtime="20201126 16:26:23.953" critical="yes"></status>
+</test>
+<test id="s1-s6-t5" name="click focus">
+<kw name="click focus" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${focus}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201126 16:26:24.360" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-860.png"&gt;&lt;img src="selenium-screenshot-860.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201126 16:26:23.988" endtime="20201126 16:26:24.360"></status>
+</kw>
+<msg timestamp="20201126 16:26:24.361" level="FAIL">Element with locator 'xpath=//div[@class='mat-menu-content']/a[2]' not found.</msg>
+<status status="FAIL" starttime="20201126 16:26:23.956" endtime="20201126 16:26:24.361"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:25.410" level="INFO">Element 'xpath=//div[@class='mat-menu-content']/a[2]' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:26:25.373" endtime="20201126 16:26:25.410"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.956" endtime="20201126 16:26:25.410"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:25.410" level="INFO">Clicking element 'xpath=//div[@class='mat-menu-content']/a[2]'.</msg>
+<status status="PASS" starttime="20201126 16:26:25.410" endtime="20201126 16:26:25.557"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 sec</arg>
+</arguments>
+<msg timestamp="20201126 16:26:30.562" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201126 16:26:25.557" endtime="20201126 16:26:30.562"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.956" endtime="20201126 16:26:30.562"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:23.955" endtime="20201126 16:26:30.562" critical="yes"></status>
+</test>
+<test id="s1-s6-t6" name="cancel focus">
+<kw name="cancel focus" library="DashBoardTerminalAnalyticsPage">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>1 sec</arg>
+<arg>Element Should Be Visible</arg>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:30.615" level="INFO">Element 'xpath=//span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']' is displayed.</msg>
+<status status="PASS" starttime="20201126 16:26:30.562" endtime="20201126 16:26:30.615"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.562" endtime="20201126 16:26:30.615"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${cancel_focus}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:30.615" level="INFO">Clicking element 'xpath=//span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']'.</msg>
+<status status="PASS" starttime="20201126 16:26:30.615" endtime="20201126 16:26:30.669"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.562" endtime="20201126 16:26:30.669"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.562" endtime="20201126 16:26:30.670" critical="yes"></status>
+</test>
+<test id="s1-s6-t7" name="count tile">
+<kw name="count tile" library="DashBoardTerminalAnalyticsPage">
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@class='e-panel e-panel-transition']</arg>
+</arguments>
+<assign>
+<var>${Count}</var>
+</assign>
+<msg timestamp="20201126 16:26:30.684" level="INFO">${Count} = 14</msg>
+<status status="PASS" starttime="20201126 16:26:30.672" endtime="20201126 16:26:30.684"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Count}</arg>
+</arguments>
+<status status="PASS" starttime="20201126 16:26:30.684" endtime="20201126 16:26:30.685"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${count}</arg>
+<arg>14</arg>
+</arguments>
+<msg timestamp="20201126 16:26:30.685" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20201126 16:26:30.685" endtime="20201126 16:26:30.685"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.672" endtime="20201126 16:26:30.685"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.671" endtime="20201126 16:26:30.686" critical="yes"></status>
+</test>
+<test id="s1-s6-t8" name="validate">
+<kw name="validate" library="DashBoardTerminalAnalyticsPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${conatin}</arg>
+</arguments>
+<msg timestamp="20201126 16:26:30.715" level="INFO">Current page contains text 'Terminal Analytics'.</msg>
+<status status="PASS" starttime="20201126 16:26:30.689" endtime="20201126 16:26:30.715"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.688" endtime="20201126 16:26:30.715"></status>
+</kw>
+<status status="PASS" starttime="20201126 16:26:30.687" endtime="20201126 16:26:30.716" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201126 16:25:26.737" endtime="20201126 16:26:30.717"></status>
+</suite>
+<status status="PASS" starttime="20201126 16:23:29.064" endtime="20201126 16:26:30.721"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="34" fail="0">Critical Tests</stat>
+<stat pass="34" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="34" fail="0" id="s1" name="01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics</stat>
+<stat pass="8" fail="0" id="s1-s1" name="01 Login">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.01 Login</stat>
+<stat pass="2" fail="0" id="s1-s2" name="02 Navigation To Switch Module">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.02 Navigation To Switch Module</stat>
+<stat pass="4" fail="0" id="s1-s3" name="03 Navigate To Dash Board Card Analytics">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.03 Navigate To Dash Board Card Analytics</stat>
+<stat pass="8" fail="0" id="s1-s4" name="04 Dashboard Card Analytics">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.04 Dashboard Card Analytics</stat>
+<stat pass="4" fail="0" id="s1-s5" name="05 Navigate To Terminal Analytics">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.05 Navigate To Terminal Analytics</stat>
+<stat pass="8" fail="0" id="s1-s6" name="06 Dashboard Terminal Analytics">01 Login &amp; 02 Navigation To Switch Module &amp; 03 Navigate To Dash Board Card Analytics &amp; 04 Dashboard Card Analytics &amp; 05 Navigate To Terminal Analytics &amp; 06 Dashboard Terminal Analytics.06 Dashboard Terminal Analytics</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
