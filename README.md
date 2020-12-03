@@ -4,7 +4,7 @@ validation of extensodata bi
   #1. 01_login
       https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/01_login.robot
         #Test case
-          1. Login browser should open
+          1. Login browser should open </br>
           2. validate -- this contain the page should contain valide text 
           3. enter user name -- enter valid user name
           4. invalid login -- enter invaid password
