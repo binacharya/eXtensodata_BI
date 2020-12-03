@@ -1,9 +1,10 @@
 # eXtensodata_BI
 validation of extensodata bi </br>
 # <h1>Test suites</h1> </br>
-  #1. <h2>01_login</h2) </br>
+  #1. <h2>01_login</h2> </br>
       https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/01_login.robot </br>
-        #Test case</br>
+        #<h3>Test case</h3></br>
+        <h4>
           1. Login browser should open </br>
           2. validate -- this contain the page should contain valide text  </br>
           3. enter user name -- enter valid user name </br>
@@ -12,3 +13,4 @@ validation of extensodata bi </br>
           6. message -- error messgae validation </br>
           7. enter password -- enter valid password </br>
           8. enter submit-- login successful </br>
+          </h4>
