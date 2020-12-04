@@ -23,14 +23,14 @@ validation of extensodata bi </br>
   <h2>3.03_navigate_to_dash_board_card_analytics</br></h2>
      <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/03_navigate_to_dash_board_card_analytics.robot">NAVIGATION TO CARD ANALYTICS</a></li></br>
     Test Cases</br>
-      1. verify that menu is clicked
-              menu icon is clicked in order to freeze side nav bar
-      2. verify that switch nav bar is selected 
-             switch option is clicked in order to navigate to switch module
-      3. verify that dashboard under switch is selected
-              Dashboard option s clicked in order to view the static dash boards
-      4. verift that card analytics under swith->Dashboard is selected
-              card analytics static dash oard is selected 
+      1. verify that menu is clicked</br>
+              menu icon is clicked in order to freeze side nav bar</br>
+      2. verify that switch nav bar is selected</br> 
+             switch option is clicked in order to navigate to switch module</br>
+      3. verify that dashboard under switch is selected</br>
+              Dashboard option s clicked in order to view the static dash boards</br>
+      4. verift that card analytics under swith->Dashboard is selected</br>
+              card analytics static dash oard is selected</br> 
                
      
           
