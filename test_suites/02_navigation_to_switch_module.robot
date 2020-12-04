@@ -8,9 +8,9 @@ Resource  ../pages/NavigationPage.robot
 
 *** Test Cases ***
 
-navigate to desired location
-    module navigation
+verify that module selection is clicked
+   verify that module selection is clicked
 
-navigate to switch
-    navigate to switch
+verify that switch module is selected
+    verify that switch module is selected
     sleep   5 sec

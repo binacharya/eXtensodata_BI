@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../pages/NavigateToDashBoardCardAnalytics.robot
+Resource  ../pages/NavBarSelection.robot
 
 
 
@@ -9,11 +9,12 @@ Resource  ../pages/NavigateToDashBoardCardAnalytics.robot
 
 *** Test Cases ***
 
-select menu icon
-   menu selection
-select switch nav bar
-    switch selection
-select dashboard nav bar
-    dashboard selection
-select terminal analytics option
-    card analytics selection
+verify that menu is clicked
+    verify that menu is clicked
+verify that switch nav bar is selected
+    verify that switch nav bar is selected
+verify that dashboard under switch is selected
+    verify that dashboard under switch is selected
+verift that card analytics under swith->Dashboard is selected
+    verift that card analytics under swith->Dashboard is selected
+

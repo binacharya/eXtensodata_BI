@@ -1,7 +1,8 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library    String
-Library     SeleniumLibrary
+
+
 *** Variables ***
 ${click_tile}       layout_21_164
 ${date_level}       //app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']
@@ -11,60 +12,60 @@ ${yearly}       //span[contains(text(),'Yearly')]
 ${menu}         //div[@id='layout_21_164']//span[@mattooltip='Menu']
 ${focus}        //div[@class='mat-menu-content']/a[2]
 ${cancel_focus}     //span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']
-${conatin}      Terminal Analytics
+${contain_text}      Terminal Analytics
 
 *** Keywords ***
-select one tiles
+vetify that one tile is selected
       wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    id=${click_tile}
       mouse over    id=${click_tile}
       sleep     5 sec
       click element   id=${click_tile}
-select all tilse
+verify that all tles are selected by clicking ctrl+a
        press keys    None      CTRL+a
-change date level for all tiles daily
+verfiy that the date level of tiles are changed to daily
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep       5 sec
        click element    xpath=${daily}
        sleep       5  sec
-change date level for all tiles monthly
+verfiy that the date level of tiles are changed to monthly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep      5 sec
        click element    xpath=${monthly}
        sleep       5  sec
-change date level for all tiles yearly
+verfiy that the date level of tiles are changed to yearly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep       5 sec
        click element    xpath=${yearly}
        sleep       5  sec
-one tile daily
+verify that one tile is clicked and date level is changed to daily
      click element   id=${click_tile}
      click element    xpath=${date_level}
      sleep       5 sec
      click element    xpath=${daily}
-one tile monthly
+verify that the date level is changed to monthly of one tile
     click element    xpath=${date_level}
-   click element    xpath=${monthly}
-one tile Yearly
+    click element    xpath=${monthly}
+verify that the date level is changed to yearly of one tile
       click element    xpath=${date_level}
       click element    xpath=${yearly}
-click menu
-    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${menu}
-    click element    xpath=${menu}
-click focus
+verify that the menu for single tile is selected
+     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${menu}
+     click element    xpath=${menu}
+verift that focus item is selected for single tile
     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${focus}
     click element    xpath=${focus}
     sleep    5 sec
-cancel focus
+verify that cancel focus is selected
     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${cancel_focus}
     click element    xpath=${cancel_focus}
-count tile
+verify that the total number tiles present in terminal analytics is correct
     ${Count}     Get Element Count      xpath=//div[@class='e-panel e-panel-transition']
     log to console    ${Count}
     should be equal as integers    ${count}     14
-validate
-    page should contain    ${conatin}
+verify that the terminal analytics should contain terminal analytics text
+    page should contain    ${contain_text}
 
 

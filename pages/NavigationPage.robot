@@ -2,21 +2,19 @@
 Library    String
 Library     SeleniumLibrary
 *** Variables ***
-${navigate}     //app-nav-modules
+${module_navigation}     //app-nav-modules
 ${switch}       //*[@id="mat-menu-panel-1"]/div/div/div/div/a[1]
 
 
 *** Keywords ***
-module navigation
+verify that module selection is clicked
 
 
-   wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${navigate}
-   click element    xpath=${navigate}
+   wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${module_navigation}
+   click element    xpath=${module_navigation}
    sleep    5 sec
 
-
-navigate to switch
-
+verify that switch module is selected
    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${switch}
    click element    xpath=${switch}
 

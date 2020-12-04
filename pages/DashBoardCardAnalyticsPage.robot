@@ -3,38 +3,37 @@ Library     SeleniumLibrary
 
 
 Library    String
-Library     SeleniumLibrary
 *** Variables ***
 ${click_tile}       layout_22_197
 ${date_level}       //app-enum-filter[@filtername='Date Level']//span[@class='ic-chevron-down']
 ${daily}        //span[contains(text(),'Daily')]
 ${monthly}      //span[contains(text(),'Monthly')]
 ${yearly}       //span[contains(text(),'Yearly')]
-${menu}         //div[@id='layout_22_193_content']//span[@mattooltip='Menu']
-${focus}        //div[@class='mat-menu-content']/a[2]
-${cancel_focus}     //span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']
+${menu_selection_for_single_tile}         //div[@id='layout_22_193_content']//span[@mattooltip='Menu']
+${focus_tile}        //div[@class='mat-menu-content']/a[2]
+${cancel_focus_tile}     //span[@class='ic-x res-font-x cursor-pointer ng-star-inserted']
 
-${conatin}      Card Analytics
+${contain_header_text}      Card Analytics
 
 *** Keywords ***
-select one tiles
+vetify that one tile is selected
 
       wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    id=${click_tile}
       mouse over    id=${click_tile}
 
       sleep     5 sec
       click element   id=${click_tile}
-select all tilse
+verify that all tles are selected by clicking ctrl+a
       press keys    None      CTRL+a
 
-change date level for all tiles daily
+verfiy that the date level of tiles are changed to daily
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep       5 sec
        click element    xpath=${daily}
 
        sleep       5  sec
-change date level for all tiles monthly
+verfiy that the date level of tiles are changed to monthly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep      5 sec
@@ -42,7 +41,7 @@ change date level for all tiles monthly
 
        sleep       5  sec
 
-change date level for all tiles yearly
+verfiy that the date level of tiles are changed to yearly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep       5 sec
@@ -50,34 +49,34 @@ change date level for all tiles yearly
 
        sleep       5  sec
 
-one tile daily
+verify that one tile is clicked and date level is changed to daily
     click element   id=${click_tile}
     click element    xpath=${date_level}
      sleep       5 sec
        click element    xpath=${daily}
-one tile monthly
+verify that the date level is changed to monthly of one tile
     click element    xpath=${date_level}
    click element    xpath=${monthly}
-one tile Yearly
+verify that the date level is changed to yearly of one tile
         click element    xpath=${date_level}
        click element    xpath=${yearly}
-click menu
-    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${menu}
-    click element    xpath=${menu}
-click focus
-    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${focus}
-    click element    xpath=${focus}
+verify that the menu for single tile is selected
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${menu_selection_for_single_tile}
+    click element    xpath=${menu_selection_for_single_tile}
+verift that focus item is selected for single tile
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${focus_tile}
+    click element    xpath=${focus_tile}
 
     sleep    5 sec
-cancel focus
-    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${cancel_focus}
-    click element    xpath=${cancel_focus}
-count tile
+verify that cancel focus is selected
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${cancel_focus_tile}
+    click element    xpath=${cancel_focus_tile}
+verify that the total number tiles present in card analytics is correct
     ${Count}     Get Element Count      xpath=//div[@class='e-panel e-panel-transition']
     log to console    ${Count}
 
-vaidate
-    page should contain     ${conatin}
+verify that the card analytics should contain card analytics text
+    page should contain     ${contain_header_text}
 
 
 

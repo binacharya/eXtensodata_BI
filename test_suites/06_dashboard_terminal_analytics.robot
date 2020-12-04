@@ -11,26 +11,32 @@ Resource  ../pages/DashBoardTerminalAnalyticsPage.robot
 
 #select one tiles in the dashboard
 #    select one tiles
-Select all tiles in the list
+verify that all tles are selected by clicking ctrl+a
     sleep   5 sec
-    select all tilse
-change date level multiple tiles
-    change date level for all tiles monthly
-    change date level for all tiles daily
-    change date level for all tiles monthly
-    change date level for all tiles yearly
-change date level single tile
-    one tile daily
-    one tile monthly
-    one tile Yearly
-    one tile daily
-focus tile
-    click menu
-click focus
-    click focus
-cancel focus
-    cancel focus
-count tile
-    count tile
-validate
-    validate
+    verify that all tles are selected by clicking ctrl+a
+verfiy that the date level of tiles are changed to monthly
+    verfiy that the date level of tiles are changed to monthly
+verfiy that the date level of tiles are changed to daily
+    verfiy that the date level of tiles are changed to daily
+verfiy that the date level of tiles are changed to monthly
+    verfiy that the date level of tiles are changed to monthly
+verfiy that the date level of tiles are changed to yearly
+    verfiy that the date level of tiles are changed to yearly
+verify that one tile is clicked and date level is changed to daily
+        verify that one tile is clicked and date level is changed to daily
+verify that the date level is changed to monthly of one tile
+        verify that the date level is changed to monthly of one tile
+verify that the date level is changed to yearly of one tile
+    verify that the date level is changed to yearly of one tile
+verify that one tile is clicked and date level is changed to daily_
+        verify that one tile is clicked and date level is changed to daily
+verify that the menu for single tile is selected
+        verify that the menu for single tile is selected
+verift that focus item is selected for single tile
+    verift that focus item is selected for single tile
+verify that cancel focus is selected
+    verify that cancel focus is selected
+verify that the total number tiles present in terminal analytics is correct
+    verify that the total number tiles present in terminal analytics is correct
+verify that the terminal analytics should contain terminal analytics text
+   verify that the terminal analytics should contain terminal analytics text
