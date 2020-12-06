@@ -16,5 +16,6 @@ verify that confirm dialouge is displayed and yes button is clicked
 
 verify that add tile button is clicked
    verify that add tile button is clicked
+
 #add deposit tiles
 #    add deposit tiles
