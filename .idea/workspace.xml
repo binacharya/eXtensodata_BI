@@ -4,22 +4,13 @@
     <list default="true" id="a07673e7-f458-47b8-bed9-bc207dfcd2dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/09_navigate_to_overview_terminal_analytics.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/DashBoardTerminalAnalyticsPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/DashBoardTerminalAnalyticsPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/EditDasbordPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/EditDasbordPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Loginpage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Loginpage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/NavBarSelection.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/NavBarSelection.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/NavigationPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/pages/NavigationPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/01_login.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/01_login.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_suites/08_edit_dashboard.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_suites/08_edit_dashboard.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,41 +68,44 @@
     <session id="-1204460997">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.0" value="6" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
           <entry key="log" value="1" />
+          <entry key="md" value="1" />
           <entry key="png" value="6" />
           <entry key="py" value="7" />
-          <entry key="robot" value="82" />
+          <entry key="robot" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Image" value="6" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="7" />
-          <entry key="Robot Feature" value="82" />
+          <entry key="Robot Feature" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="robot" value="4130" />
+          <entry key="robot" value="4484" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Robot Feature" value="4130" />
+          <entry key="Robot Feature" value="4484" />
         </counts>
       </usages-collector>
     </session>
@@ -122,57 +116,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot">
+        <entry file="file://$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="952">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/DashBoardTerminalAnalyticsPage.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/NavigationPage.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/NavBarSelection.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_suites/08_edit_dashboard.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="136">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -191,10 +152,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/EditDasbordPage.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="1054">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#0#62#0" expanded="true" />
               </folding>
@@ -202,11 +172,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/Loginpage.robot">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_suites/09_navigate_to_overview_terminal_analytics.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,7 +187,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="1088">
               <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
@@ -226,10 +199,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="17">
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/NavBarSelection.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,20 +252,21 @@
         <option value="$PROJECT_DIR$/pages/NavigateToDashBoardCardAnalytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/09_navigate_overview_terminal_analytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/test.robot" />
-        <option value="$PROJECT_DIR$/pages/EditDasbordPage.robot" />
         <option value="$PROJECT_DIR$/test_suites/01_login.robot" />
-        <option value="$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot" />
         <option value="$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot" />
         <option value="$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot" />
-        <option value="$PROJECT_DIR$/test_suites/08_edit_dashboard.robot" />
         <option value="$PROJECT_DIR$/pages/DashBoardTerminalAnalyticsPage.robot" />
         <option value="$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot" />
         <option value="$PROJECT_DIR$/pages/Loginpage.robot" />
-        <option value="$PROJECT_DIR$/pages/NavBarSelection.robot" />
         <option value="$PROJECT_DIR$/pages/NavigationPage.robot" />
+        <option value="$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot" />
+        <option value="$PROJECT_DIR$/pages/EditDasbordPage.robot" />
+        <option value="$PROJECT_DIR$/pages/NavBarSelection.robot" />
+        <option value="$PROJECT_DIR$/test_suites/08_edit_dashboard.robot" />
+        <option value="$PROJECT_DIR$/test_suites/09_navigate_to_overview_terminal_analytics.robot" />
       </list>
     </option>
   </component>
@@ -287,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,11 +290,20 @@
               <item name="BIDashBoardValidation" type="b2602c69:ProjectViewProjectNode" />
               <item name="BIDashBoardValidation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BIDashBoardValidation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIDashBoardValidation" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BIDashBoardValidation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIDashBoardValidation" type="462c0819:PsiDirectoryNode" />
+              <item name="test_suites" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +343,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981884" visible="true" weight="0.18335089" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981884" visible="true" weight="0.18335089" />
       <window_info id="Structure" order="1" sideWeight="0.5018116" side_tool="true" weight="0.18335089" />
       <window_info id="Favorites" order="2" sideWeight="0.5008" side_tool="true" weight="0.18335089" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -349,7 +354,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40772533" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40772533" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -464,120 +469,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_suites/09_navigate_overview_terminal_analytics.robot" />
-    <entry file="file://$PROJECT_DIR$/test_suites/test.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/01_login.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_suites/08_edit_dashboard.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/test.robot" />
     <entry file="file://$PROJECT_DIR$/pages/DashBoardTerminalAnalyticsPage.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/EditDasbordPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,22 +484,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/NavBarSelection.robot">
+    <entry file="file://$PROJECT_DIR$/pages/NavigationPage.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/DashBoardCardAnalyticsPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/01_login.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/04_dashboard_card_analytics.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/03_navigate_to_dash_board_card_analytics.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/05_navigate_to_terminal_analytics.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/EditDasbordPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/NavigationPage.robot">
+    <entry file="file://$PROJECT_DIR$/test_suites/06_dashboard_terminal_analytics.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="1088">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/07_navigate_edit_dashboard.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/02_navigation_to_switch_module.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/NavBarSelection.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/08_edit_dashboard.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_suites/09_navigate_to_overview_terminal_analytics.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>

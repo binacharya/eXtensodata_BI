@@ -8,7 +8,9 @@ ${delete_button}                                    //span[@class='ic-trash']
 ${confirm_yes_button}                               //span[contains(text(),'Yes')]
 ${add_tile_button}                                  //div[@class='dashboard-toolbar-align']//span[@class='ic-plus']
 ${customer_analytics_checkbox_xpath}                 //mat-tree/mat-tree-node[1]//span[@class='mat-checkbox-label']
-
+${add_tile_button_xpath}                            //button[@class='bi-btn bi-btn-primary']
+${cancel_button_xpath}                             //button[@class='bi-btn bi-btn-secondary']
+${save_button}                                     //span[@class='ic-save']
 
 *** Keywords ***
 
@@ -42,6 +44,29 @@ verify that add tile button is clicked
 add deposit tiles
     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${customer_analytics_checkbox_xpath}
     click element    xpath=${customer_analytics_checkbox_xpath}
+
+verify that add tiles button is clickable
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${add_tile_button_xpath}
+    click element    xpath=${add_tile_button_xpath}
+
+verify that cancel button is clickable
+       wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${cancel_button_xpath}
+        click element    xpath=${cancel_button_xpath}
+        sleep   5 sec
+
+verify that tiles are saved
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${save_button}
+    mouse over      xpath=${save_button}
+    click element    xpath=${save_button}
+
+verify that confirm dialouge is displayed and yes button is clicked to save tile
+    wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${confirm_yes_button}
+    click element   xpath=${confirm_yes_button}
+
+
+
+
+
 
 
 

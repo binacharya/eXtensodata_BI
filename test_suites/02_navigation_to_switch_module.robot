@@ -10,7 +10,7 @@ Resource  ../pages/NavigationPage.robot
 
 verify that module selection is clicked
     sleep   5 sec
-   verify that module selection is clicked
+    verify that module selection is clicked
 
 
 verify that switch module is selected

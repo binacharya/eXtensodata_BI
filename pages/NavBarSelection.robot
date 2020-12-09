@@ -60,10 +60,16 @@ verify that switch nav bar is selected for overview
     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${switch}
     click element    xpath=${switch}
 
+
 verify that terminal analytics of overview sub category is clicked
      wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${terminal_analytics_overview}
      click element    xpath=${terminal_analytics_overview}
 
+
+#verify that switch nav bar is selected for overview
+#         wait until keyword succeeds    1 min    1 sec      Element Should Be Visible     xpath=${switch}
+#         mouse over    xpath=${switch}
+#        click element    xpath=${switch}
 
 
 

@@ -27,4 +27,20 @@ verify that add tile button is clicked
 
 add deposit tiles
     add deposit tiles
+    sleep   5 sec
     add deposit tiles
+
+
+
+
+verify that add tiles button is clickable
+    verify that add tiles button is clickable
+
+
+verify that cancel button is clickable
+    verify that cancel button is clickable
+
+verify that tiles are saved
+     verify that tiles are saved
+verify that confirm dialouge is displayed and yes button is clicked to save tile
+        verify that confirm dialouge is displayed and yes button is clicked to save tile
