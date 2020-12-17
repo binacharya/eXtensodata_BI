@@ -35,8 +35,13 @@ validation of extensodata bi </br>
    <h2>4.04_dashboard_card_analytics.robot</h2>
         <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/04_dashboard_card_analytics.robot">CARD ANALYTICS PAGE</a></li></br>
       Test cases</br>
-      1.verify that all tles are selected by clicking ctrl+a for card analyics
-        all tiles must be selected by clicking ctrl+a
+      1.verify that all tles are selected by clicking ctrl+a for card analyics </br>
+        all tiles must be selected by clicking ctrl+a </br>
+      
+      2.verfiy that the date level of tiles are changed to monthly of card analyics </br>
+        date level for all tiles are changed to monthly
+        
+      3.
    
           
      
