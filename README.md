@@ -110,11 +110,23 @@ validation of extensodata bi </br>
          
          
       12.verify that the card analytics should contain card analytics text for card analytics
-      card analytics contains card analytics as title
-      
-      
-      
-      
+          card analytics contains card analytics as title
+ 
+ <h2>5.05_navigate_to_terminal_analytics.robot</h2>   
+        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/05_navigate_to_terminal_analytics.robot">NAGIGATE TO TERMINAL ANALYTICS</a></li></br>    
+      Test cases</br>  
     
+    1.verify that menu_ is clicked for terminal analytics
+           menu item is click in order to freeze side nav bar
           
+          
+    2. verify that switch nav bar is selected for terminal analytics
+           switch is clicked in side nav bar
+          
+          
+    3. verify that dashboard under switch is selected for terminal analytics
+            dasboard is click unnder switch in side nav bar
      
+     
+     4.verify that terminal analytics under swith->Dashboard is selected for terminal analytics
+            terminal analytics under swith->Dashboard is selected in side nav bar    
