@@ -37,11 +37,32 @@ validation of extensodata bi </br>
       Test cases</br>
       1.verify that all tles are selected by clicking ctrl+a for card analyics </br>
         all tiles must be selected by clicking ctrl+a </br>
-      
       2.verfiy that the date level of tiles are changed to monthly of card analyics </br>
-        date level for all tiles are changed to monthly
-        
-      3.
-   
+        date level for all tiles are changed to monthly</br>
+      3. verfiy that the date level of tiles are changed to daily for card analytics </br>
+         date level for all tiles are changed to daily</br>
+      4.verfiy that the date level of tiles are changed to yearly for card analytics</br>
+         date level for all tiles are changed to yearly</br>
+      5.verify that one tile is clicked and date level is changed to daily for card analytics</br>
+        one tile is selected and date level is changed to daily</br>
+      6. verify that the date level is changed to monthly of one tile for card analytics</br>
+         for single tile date level is changed to monthly</br>
+      7.verify that the date level is changed to yearly of one tile for card analytics</br>
+        for single tile date level is changed to yearly</br>
+      8.verify that the menu for single tile is selected for card analytics</br>
+      menu is click in order to focus the tile</br>
+      9.verift that focus item is selected for single tile for card analytics</br>
+      tile is focus</br>
+      10.verify that cancel focus is selected for card analytics</br>
+      focused tile is canceled</br>
+      11.verify that the total number tiles present in card analytics is correct for card analytics</br>
+      count the total number of tiles is card analytics and verify it</br>
+      12.verify that the card analytics should contain card analytics text for card analytics</r>
+      card analytics contains card analytics as title</br>
+      
+      
+      
+      
+    
           
      
