@@ -27,9 +27,7 @@ validation of extensodata bi </br>
               login successful </br>
               
   <h2>2.02_navigation_to_switch_module</br></h2>
-  
-    <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/02_navigation_to_switch_module.robot">NAVIGATION TO SWITCH MODULE</a></li></br>
-    
+    <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/02_navigation_to_switch_module.robot">NAVIGATION TO SWITCH MODULE</a></li></br>  
       Test cases</br>
       
       
@@ -61,10 +59,8 @@ validation of extensodata bi </br>
       4. verift that card analytics under swith->Dashboard is selected</br>
               card analytics static dash oard is selected</br> 
                
-   <h2>4.04_dashboard_card_analytics.robot</h2>
-   
-        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/04_dashboard_card_analytics.robot">CARD ANALYTICS PAGE</a></li></br>
-        
+   <h2>4.04_dashboard_card_analytics.robot</h2>   
+        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/04_dashboard_card_analytics.robot">CARD ANALYTICS PAGE</a></li></br>    
       Test cases</br>
       
       
