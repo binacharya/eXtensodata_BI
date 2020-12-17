@@ -32,6 +32,11 @@ validation of extensodata bi </br>
       4. verift that card analytics under swith->Dashboard is selected</br>
               card analytics static dash oard is selected</br> 
                
-     
+   <h2>4.04_dashboard_card_analytics.robot</h2>
+        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/04_dashboard_card_analytics.robot">CARD ANALYTICS PAGE</a></li></br>
+      Test cases</br>
+      1.verify that all tles are selected by clicking ctrl+a for card analyics
+        all tiles must be selected by clicking ctrl+a
+   
           
      
