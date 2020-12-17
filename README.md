@@ -113,7 +113,7 @@ validation of extensodata bi </br>
           card analytics contains card analytics as title
  
  <h2>5.05_navigate_to_terminal_analytics.robot</h2>   
-        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/05_navigate_to_terminal_analytics.robot">NAGIGATE TO TERMINAL ANALYTICS</a></li></br>    
+        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/05_navigate_to_terminal_analytics.robot">NAVIGATE TO TERMINAL ANALYTICS</a></li></br>    
       Test cases</br>  
     
     1.verify that menu_ is clicked for terminal analytics
@@ -129,4 +129,57 @@ validation of extensodata bi </br>
      
      
      4.verify that terminal analytics under swith->Dashboard is selected for terminal analytics
-            terminal analytics under swith->Dashboard is selected in side nav bar    
+            terminal analytics under swith->Dashboard is selected in side nav bar 
+            
+   <h2>6.06_dashboard_terminal_analytics.robot</h2>   
+        <li><a href="https://github.com/binacharya/eXtensodata_BI/blob/master/test_suites/06_dashboard_terminal_analytics.robot">NAVIGATE TO TERMINAL ANALYTICS</a></li></br>    
+      Test cases</br>  
+      
+    
+    1.verify that all tles are selected by clicking ctrl+a for terminal analytics
+             all tiles are selected bu clicking ctrl+a
+       
+       
+     2.verfiy that the date level of tiles are changed to monthly for terminal analytics
+              date level of all tiles are changed to monthly
+              
+      
+      3.verfiy that the date level of tiles are changed to daily for terminal analytics
+               date level of all tiles are changed to daily
+               
+               
+       4.verfiy that the date level of tiles are changed to yearly for terminal analytics
+                date level of all tiles are changed to yearly
+                
+                
+        6.verify that one tile is clicked and date level is changed to daily for terminal analytics
+                one tile is selected and date level is changed to daily
+                
+                
+         7.verify that the date level is changed to monthly of one tile for terminal analytics 
+                date level of one tile is changed to monthly
+                
+                
+          9.verify that the date level is changed to yearly of one tile for terminal analytics
+               date level of one tile is changed to monthly
+               
+               
+           10.verify that the menu for single tile is selected for terminal analytics
+                   menu is clicked in-order to focus the tile
+                   
+                   
+           11. verift that focus item is selected for single tile for terminal analytics
+                     tile is focus
+                     
+                     
+           12.verify that cancel focus is selected for terminal analytics
+                    focused tile is canceled
+                    
+                    
+            13.verify that the total number tiles present in terminal analytics is correct for terminal analytics
+                     number of tiles are verified in terminal analytics page
+                     
+                     
+             14.verify that the terminal analytics should contain terminal analytics text for terminal analytics
+                        terminal analytics page contains Terminal analytics text as header 
+      
