@@ -11,8 +11,12 @@ Resource  ../pages/DashBoardTerminalAnalyticsPage.robot
 
 #select one tiles in the dashboard
 #    select one tiles
+
+verify that terminal analytics page is present
+    go to    https://10.13.189.19:8443/bi/switch/dashboard/21
+     sleep   5 sec
 verify that all tles are selected by clicking ctrl+a for terminal analytics
-    sleep   5 sec
+
     verify that all tles are selected by clicking ctrl+a
 
 

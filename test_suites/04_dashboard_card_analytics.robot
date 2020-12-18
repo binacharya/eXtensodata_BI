@@ -11,6 +11,8 @@ Resource  ../pages/DashBoardCardAnalyticsPage.robot
 
 #select one tiles in the dashboard
 #    select one tiles
+verify that card analytics page is availabe
+        go to   https://10.13.189.19:8443/bi/switch/dashboard/22
 verify that all tles are selected by clicking ctrl+a for card analyics
     sleep   5 sec
    verify that all tles are selected by clicking ctrl+a
