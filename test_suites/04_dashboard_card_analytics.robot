@@ -13,12 +13,12 @@ Resource  ../pages/DashBoardCardAnalyticsPage.robot
 #    select one tiles
 verify that card analytics page is availabe
         go to   https://10.13.189.19:8443/bi/switch/dashboard/22
-verify that all tles are selected by clicking ctrl+a for card analyics
+all tles are selected by clicking ctrl+a for card analyics
     sleep   5 sec
    verify that all tles are selected by clicking ctrl+a
 
 
-verfiy that the date level of tiles are changed to monthly of card analyics
+date level of tiles are changed to monthly of card analyics
     verfiy that the date level of tiles are changed to monthly
 
 

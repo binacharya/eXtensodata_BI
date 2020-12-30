@@ -14,8 +14,8 @@ verify that menu is clicked for terminal analytics over view
 #    verify that switch nav bar is selected
 
 
-verify that switch nav bar is selected for overview
-        verify that switch nav bar is selected for overview
+#verify that switch nav bar is selected for overview
+#        verify that switch nav bar is selected for overview
 
 verify that Report Categories is clicked
     verify that Report Categories is clicked

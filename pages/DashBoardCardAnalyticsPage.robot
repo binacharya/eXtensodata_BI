@@ -35,13 +35,15 @@ verfiy that the date level of tiles are changed to daily
        sleep       5  sec
 
 
+
 verfiy that the date level of tiles are changed to monthly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}
        click element    xpath=${date_level}
        sleep      5 sec
        click element    xpath=${monthly}
        sleep       5  sec
-
+       ${quarterly_value}=  get text    xpath=//div[@fxlayoutalign='center center']
+       log to console    ${quarterly_value}
 
 verfiy that the date level of tiles are changed to yearly
        wait until keyword succeeds    1 min    1 sec      Element Should Be Visible   xpath=${date_level}

@@ -8,11 +8,11 @@ Resource  ../pages/NavigationPage.robot
 
 *** Test Cases ***
 
-verify that module selection is clicked
+module selection is clicked
     sleep   5 sec
-    verify that module selection is clicked
+    module selection is clicked
 
 
-verify that switch module is selected
+switch module is selected
     verify that switch module is selected
     sleep   5 sec

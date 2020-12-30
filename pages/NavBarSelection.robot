@@ -5,8 +5,8 @@ Library     SeleniumLibrary
 ${menu}                             //span[@class='cursor-pointer mr-15 ic-menu']
 ${switch}                           //span[@class='ng-star-inserted' and contains(text(), 'Switch')]
 ${dashboard}                        //mat-tree[@class='mat-tree']/mat-tree-node[3]
-${overview}                         //mat-tree[@class='mat-tree']/mat-tree-node[4]
-${terminal_analytics_overview}      //span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Terminal  Analytics')]
+${overview}                         //span[contains(text(),'Overview')]
+${terminal_analytics_overview}      //mat-tree/mat-tree-node[7]
 ${card_analytics}                   //span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Card Analytics')]
 ${terminal_analytics}               //span[@class='sidebar-node ng-star-inserted' and contains(text(), 'Terminal  Analytics')]
 ${edit_dashboard}                   //mat-tree-node[1]/span

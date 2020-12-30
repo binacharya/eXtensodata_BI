@@ -31,11 +31,11 @@ open login browser
 
 
 verify that the login page should contain header text
-    page should contain      ${header_text}
+    run keyword and continue on failure    page should contain      ${header_text}
 
 
 verify that the login page should contain quiries message
-    page should contain     ${queries_message_text}
+   run keyword and continue on failure    page should contain     ${queries_message_text}
 
 
 enter valid user name
@@ -47,7 +47,7 @@ enter invalid password
 
 
 verify error message is displayed
-    page should contain    Authentication attempt has failed, likely due to invalid credentials. Please verify and try again.
+    run keyword and continue on failure    page should contain    Authentication attempt has failed, likely due to invalid credentials. Please verify and try again.
 
 
 enter valid password
