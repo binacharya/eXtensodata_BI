@@ -3,16 +3,16 @@ Library     SeleniumLibrary
 Library    String
 
 *** Variables ***
-${edit_button}                                      //span[@class='ic-edit']
-${delete_button}                                    //span[@class='ic-trash']
-${confirm_yes_button}                               //span[contains(text(),'Yes')]
+${edit_button}                                       //span[@class='ic-edit']
+${delete_button}                                     //span[@class='ic-trash']
+${confirm_yes_button}                                //span[contains(text(),'Yes')]
 ${add_tile_button}                                   //div[@class='ng-star-inserted']//button[4]
 ${customer_analytics_checkbox_xpath}                 //mat-tree/mat-tree-node[1]//span[@class='mat-checkbox-label']
 ${add_tile_button_xpath}                            //button[@class='bi-btn bi-btn-primary']
 ${cancel_button_xpath}                             //button[@class='bi-btn bi-btn-secondary']
 ${save_button}                                     //span[@class='ic-save']
-${edit_btn_css}     css=.bi-ic-btn.bi-btn-primary.ng-star-inserted
-${plus_sign_widget_xpath}    //button[@class='bi-ic-btn bi-btn-primary']//span[@class='ic-plus']
+${edit_btn_css}                                    css=.bi-ic-btn.bi-btn-primary.ng-star-inserted
+${plus_sign_widget_xpath}                          //button[@class='bi-ic-btn bi-btn-primary']//span[@class='ic-plus']
 
 *** Keywords ***
 

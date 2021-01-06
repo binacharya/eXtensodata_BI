@@ -1,5 +1,5 @@
 *** Settings ***
-Library    String
+Library     String
 Library     SeleniumLibrary
 *** Variables ***
 ${module_navigation}     //app-nav-modules

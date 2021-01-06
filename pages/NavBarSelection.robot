@@ -1,5 +1,5 @@
 *** Settings ***
-Library    String
+Library     String
 Library     SeleniumLibrary
 *** Variables ***
 ${menu}                             //span[@class='cursor-pointer mr-15 ic-menu']

@@ -21,9 +21,17 @@ all tles are selected by clicking ctrl+a for card analyics
 date level of tiles are changed to monthly of card analyics
     verfiy that the date level of tiles are changed to monthly
 
+verify that the date level for all tiles is monthly
+    verify that the date level for all tiles is monthly
+
 
 verfiy that the date level of tiles are changed to daily for card analytics
     verfiy that the date level of tiles are changed to daily
+
+
+
+verify that the date level for all tiles is daily
+    verify that the date level for all tiles is daily
 
 
 verfiy that the date level of tiles are changed to monthly_ for card analytics
@@ -32,6 +40,10 @@ verfiy that the date level of tiles are changed to monthly_ for card analytics
 
 verfiy that the date level of tiles are changed to yearly for card analytics
     verfiy that the date level of tiles are changed to yearly
+
+
+verify that the date level for all tiles is yearly
+        verify that the date level for all tiles is yearly
 
 
 verify that one tile is clicked and date level is changed to daily for card analytics

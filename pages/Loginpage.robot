@@ -1,8 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-
-
-Library    String
+Library     String
 
 *** Variables ***
 ${user_name_text}                admin
