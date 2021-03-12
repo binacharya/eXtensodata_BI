@@ -1,0 +1,24 @@
+==============================================================================
+01 Login                                                                      
+==============================================================================
+amazone                                                               ------of--------FOO-
+{'level': 'SEVERE', 'message': 'http://privacy.digimedia.com/check_cookie_country_code.js - Failed to load resource: the server responded with a status of 503 (Service Unavailable: Back-end server is at capacity)', 'source': 'network', 'timestamp': 1614333028061}
+{'level': 'WARNING', 'message': 'http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js 1:30929 "jQuery.Deferred exception: privacy_consent is not defined"', 'source': 'console-api', 'timestamp': 1614333028065}
+{'level': 'SEVERE', 'message': 'http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js 1:31039 Uncaught ReferenceError: privacy_consent is not defined', 'source': 'javascript', 'timestamp': 1614333028077}
+3
+-----------of amazone---------------
+{'level': 'SEVERE', 'message': 'about:blank - Failed to load resource: net::ERR_UNKNOWN_URL_SCHEME', 'source': 'network', 'timestamp': 1614333032140}
+{'level': 'SEVERE', 'message': "https://images-na.ssl-images-amazon.com/images/I/11Y+5x+kkTL._RC%7C51IWYO5M+zL.js,112nmCqUymL.js,11giXtZCwVL.js,01+z+uIeJ-L.js,014NohEdE7L.js,21NNXfMitSL.js,11GXfd3+z+L.js,51gm4oPD2cL.js,11AHlQhPRjL.js,11UNQpqeowL.js,11OREnu1epL.js,11KbZymw5ZL.js,21r53SJg7LL.js,0190vxtlzcL.js,51bbIMIQQwL.js,31KrK+dcMcL.js,01Gf12ogmOL.js,01ezj5Rkz1L.js,11VS-C+YWGL.js,31pOTH2ZMRL.js,01rpauTep4L.js,01zbcJxtbAL.js_.js?AUIClients/AmazonUI&KTRJ74Bq 149:345 Uncaught DOMException: Could not resolve 'light 1em Amazon Ember' as a font.", 'source': 'javascript', 'timestamp': 1614333035953}
+{'level': 'SEVERE', 'message': "https://images-na.ssl-images-amazon.com/images/I/11Y+5x+kkTL._RC%7C51IWYO5M+zL.js,112nmCqUymL.js,11giXtZCwVL.js,01+z+uIeJ-L.js,014NohEdE7L.js,21NNXfMitSL.js,11GXfd3+z+L.js,51gm4oPD2cL.js,11AHlQhPRjL.js,11UNQpqeowL.js,11OREnu1epL.js,11KbZymw5ZL.js,21r53SJg7LL.js,0190vxtlzcL.js,51bbIMIQQwL.js,31KrK+dcMcL.js,01Gf12ogmOL.js,01ezj5Rkz1L.js,11VS-C+YWGL.js,31pOTH2ZMRL.js,01rpauTep4L.js,01zbcJxtbAL.js_.js?AUIClients/AmazonUI&KTRJ74Bq 149:345 Uncaught DOMException: Could not resolve 'medium 1em Amazon Ember' as a font.", 'source': 'javascript', 'timestamp': 1614333035953}
+{'level': 'SEVERE', 'message': "https://images-na.ssl-images-amazon.com/images/I/11Y+5x+kkTL._RC%7C51IWYO5M+zL.js,112nmCqUymL.js,11giXtZCwVL.js,01+z+uIeJ-L.js,014NohEdE7L.js,21NNXfMitSL.js,11GXfd3+z+L.js,51gm4oPD2cL.js,11AHlQhPRjL.js,11UNQpqeowL.js,11OREnu1epL.js,11KbZymw5ZL.js,21r53SJg7LL.js,0190vxtlzcL.js,51bbIMIQQwL.js,31KrK+dcMcL.js,01Gf12ogmOL.js,01ezj5Rkz1L.js,11VS-C+YWGL.js,31pOTH2ZMRL.js,01rpauTep4L.js,01zbcJxtbAL.js_.js?AUIClients/AmazonUI&KTRJ74Bq 149:345 Uncaught DOMException: Could not resolve 'italic light 1em Amazon Ember' as a font.", 'source': 'javascript', 'timestamp': 1614333035953}
+{'level': 'SEVERE', 'message': "https://images-na.ssl-images-amazon.com/images/I/11Y+5x+kkTL._RC%7C51IWYO5M+zL.js,112nmCqUymL.js,11giXtZCwVL.js,01+z+uIeJ-L.js,014NohEdE7L.js,21NNXfMitSL.js,11GXfd3+z+L.js,51gm4oPD2cL.js,11AHlQhPRjL.js,11UNQpqeowL.js,11OREnu1epL.js,11KbZymw5ZL.js,21r53SJg7LL.js,0190vxtlzcL.js,51bbIMIQQwL.js,31KrK+dcMcL.js,01Gf12ogmOL.js,01ezj5Rkz1L.js,11VS-C+YWGL.js,31pOTH2ZMRL.js,01rpauTep4L.js,01zbcJxtbAL.js_.js?AUIClients/AmazonUI&KTRJ74Bq 149:345 Uncaught DOMException: Could not resolve 'italic medium 1em Amazon Ember' as a font.", 'source': 'javascript', 'timestamp': 1614333035953}
+5
+| PASS |
+------------------------------------------------------------------------------
+01 Login                                                              | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\output.xml
+Log:     C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\log.html
+Report:  C:\Users\bina.acharya\PycharmProjects\BIDashBoardValidation\report.html

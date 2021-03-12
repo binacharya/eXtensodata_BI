@@ -26,37 +26,46 @@ verfiy that the date level of tiles are changed to monthly for terminal analytic
 
 verfiy that the date level of tiles are changed to daily for terminal analytics
     verfiy that the date level of tiles are changed to daily
+verify that the date level for all tiles is daily
+    verify that the date level for all tiles is daily
 
 
 verfiy that the date level of tiles are changed to monthly for terminal analytics
     verfiy that the date level of tiles are changed to monthly
 
+verify that the date level for all tiles is monthly
+    verify that the date level for all tiles is monthly
 
-verfiy that the date level of tiles are changed to yearly for terminal analytics
+
+
+the date level of tiles are changed to yearly for terminal analytics
     verfiy that the date level of tiles are changed to yearly
 
+verify that the date level for all tiles is yearly
+    verify that the date level for all tiles is yearly
 
-verify that one tile is clicked and date level is changed to daily for terminal analytics
+
+one tile is clicked and date level is changed to daily for terminal analytics
         verify that one tile is clicked and date level is changed to daily
 
 
-verify that the date level is changed to monthly of one tile for terminal analytics
+date level is changed to monthly of one tile for terminal analytics
         verify that the date level is changed to monthly of one tile
 
 
-verify that the date level is changed to yearly of one tile for terminal analytics
+date level is changed to yearly of one tile for terminal analytics
     verify that the date level is changed to yearly of one tile
 
 
-verify that one tile is clicked and date level is changed to daily_ for terminal analytics
+one tile is clicked and date level is changed to daily_ for terminal analytics
         verify that one tile is clicked and date level is changed to daily
 
 
-verify that the menu for single tile is selected for terminal analytics
+menu for single tile is selected for terminal analytics
         verify that the menu for single tile is selected
 
 
-verift that focus item is selected for single tile for terminal analytics
+focus item is selected for single tile for terminal analytics
     verift that focus item is selected for single tile
 
 

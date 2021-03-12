@@ -92,4 +92,17 @@ verify that the total number tiles present in terminal analytics is correct
 verify that the terminal analytics should contain terminal analytics text
     page should contain    ${contain_text}
 
+verify that the date level for all tiles is daily
+    ${daily_text}=  get text    xpath=//div[@fxlayoutalign='center center']
+    should be equal as strings      ${daily_text}       D       msg=should be 'D' but got ${daily_text}
+
+verify that the date level for all tiles is monthly
+    ${monthly_text}=  get text    xpath=//div[@fxlayoutalign='center center']
+    should be equal as strings      ${monthly_text}       M     msg=should be 'M' but got ${monthly_text}
+verify that the date level for all tiles is yearly
+
+    ${yearly_text}=  get text    xpath=//div[@fxlayoutalign='center center']
+    should be equal as strings      ${yearly_text}       Y      msg=should be 'Y' but got ${yearly_text}
+
+
 

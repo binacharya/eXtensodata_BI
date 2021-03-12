@@ -57,6 +57,8 @@ verify that cancel button is clickable
         click element    xpath=${cancel_button_xpath}
         sleep   5 sec
 
+
+
 verify that tiles are saved
     wait until keyword succeeds    1 min    1 sec      Element Should Be Visible    xpath=${save_button}
     mouse over      xpath=${save_button}
