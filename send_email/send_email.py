@@ -2,7 +2,9 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
-from email import encoders
+from email import encoders[InternetShortcut]
+URL=https://github.com/binacharya/eXtensodata_BI/blob/master/send_email/send_email.py
+
 mail_content = '''Hello,<br>
 PFA<br>
 With Regards,<br>
@@ -11,7 +13,7 @@ QA Department
 
 #The mail addresses and password
 sender_address = 'bina.acharya@extensodata.com'
-sender_pass = 'Onlyme12345'
+sender_pass = 'XXXX'
 #receiver_address[] = ['bina.acharya@extensodata.com','sony.shrestha@extensodata.com']
 #Setup the MIME
 message = MIMEMultipart()
